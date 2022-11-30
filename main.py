@@ -1,6 +1,6 @@
 import random
 
-def lisää_sana(sana=""):
+def lisaa_sana(sana=""):
     with open("sanalista.txt", "a+") as sanalista:
         sanalista.seek(0)
         if len(sanalista.read()) > 0:
@@ -24,9 +24,7 @@ def aloita_peli(sana_pituus, max_kierrokset):
     kierrokset = 0
     väärät_kirjaimet = []
     arvaus = ""
-
-    print(sana)
-
+    
     while(arvaus != sana):
 
         väärät_kirjaimet.sort()
